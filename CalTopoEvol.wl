@@ -246,7 +246,8 @@ AppendTo[re,XBS[[i]]]
 ShowBC[result_]:=Table[{result[[i1,1]],result[[i1,2]],result[[i1,3]],{result[[i1,4,1]],MatrixForm[result[[i1,4,2]]]}},{i1,Length[result]}]
 
 
-CalTopoEvol[imsg_,symdata_,so_]:=Module[{topoevol,sub,patten,path,path1,patten2,allimsg3,ipath},
+CalTopoEvol[msg_,symdata_,so_]:=Module[{topoevol,sub,patten,path,path1,patten2,allimsg3,ipath,imsg},
+imsg=Position[allmsg3,msg][[1,1]];
 topoevol=Table[CalTopoSubGrp[imsg,SBPattern[[imsg,ii]],symdata,so],{ii,Length[SBPattern[[imsg]]]}];
 sub=Position[allmpg,mpgmsg[[imsg]]][[1,1]];
 patten=SBPattern[[imsg]];
