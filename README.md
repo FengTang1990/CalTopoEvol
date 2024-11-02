@@ -1,5 +1,4 @@
-# CalTopoEvol
-Given DFT high-symmetry data (based on magnetic space group), output topological state evolution along all symmetry-breaking paths
+Uzip CalTopoEvol1.1.zip, then get two files: CalTopoEvol.rar and CalTopoEvol.wl 
 Decompress CalTopoEvol.rar and get CalTopoEvol.mx
 Open a Mathematica notebook and run the command: Get["Dir\CalTopoEvol.wl"], where Dir denotes the directory containing CalTopoEvol.wl
 An example: 
